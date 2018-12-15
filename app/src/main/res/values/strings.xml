@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">Kindo</string>
+    <string name="app_site">http://gokindo.biz</string>
+
+    <string name="progress_loading_title">Loading</string>
+
+    <string name="repair_template">
+        (function() {
+            var logo = document.querySelector(\'img.custom-logo\');
+            logo.style.width = \'30%\';
+-
+            {sauce}
+        })();
+    </string>
+
+    <string name="repair_drop_template">
+        document.querySelectorAll(\'{selector}\')
+            .forEach(function(el) {
+                el.style.display = \'none\';
+             });
+    </string>
+
+    <string-array name="drop_repairs">
+        <item>#home</item>
+        <item>footer</item> <!-- Footer -->
+        <item>#text-6</item> <!-- Terms and Conditions -->
+        <item>section.page-header-module.module</item>
+    </string-array>
+</resources>
